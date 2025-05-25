@@ -75,7 +75,7 @@ func Webhook(c *gin.Context) {
 	}
 
 	// Log the raw JSON data to your file log (wazuh-webhook.log)
-	logx.Infof("Webhook received raw data: %s", string(rawData))
+	// logx.Infof("Webhook received raw data: %s", string(rawData))
 
 	// Attempt to parse the JSON to validate it and potentially extract specific fields
 	var payload map[string]interface{} // Use a map for flexible JSON structure
