@@ -74,6 +74,7 @@ func Webhook(c *gin.Context) {
 		return
 	}
 
+	logx.Infof("rawData: %s", string(rawData))
 	// Log the raw JSON data to your file log (wazuh-webhook.log)
 	// logx.Infof("Webhook received raw data: %s", string(rawData))
 
