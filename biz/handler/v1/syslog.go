@@ -85,7 +85,7 @@ func Webhook(c *gin.Context) {
 		// Decide if you still want to send raw data to syslog if unmarshalling fails
 	}
 
-	infoData := fmt.Sprintf("Received JSON data: event_type: %s, event_data: %s", payload["event_type"], string(rawData))
+	infoData := fmt.Sprintf("Received JSON data: %s", string(rawData))
 
 	logx.Infof("infoData: %s", infoData)
 
