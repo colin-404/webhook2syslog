@@ -1,0 +1,15 @@
+Syslog:
+  host: 10.1.8.212
+  port: 5144
+  protocol: tcp
+  level: info
+
+Server:
+  port: 8062
+
+Log:
+  path: /var/log/webhook2syslog/webhook2syslog.log
+  level: info
+  max_size: 10
+  max_backups: 10
+  max_age: 30
